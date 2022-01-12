@@ -1,0 +1,35 @@
+header {
+    background-color: var(--color-primary);
+    /*Altura da barra */
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-nav-content {
+    /*Um do lado do outro*/
+    display: flex;
+    /*Espaço entre as imagens*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-contact-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-link {
+    /*Retirando a margem do link devGiovanni95
+    e colocando um espaçamento entre o texto e a imagem*/
+    margin: 0 0 0 10px;
+}
+
+
+/*O H1 que estiver dentro da classe pai terá as configurações*/
+
+.dsmovie-nav-content h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+}
