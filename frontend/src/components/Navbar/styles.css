@@ -4,6 +4,11 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
 }
 
 .dsmovie-nav-content {
