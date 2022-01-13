@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 //CLASSE AUXILIAR PARA FAZER O RELACIONAMENTO DE CHAVE PRIMARIA POIS A RELACAO E MUITO PARA MUITOS
 @Embeddable
-public class ScorePK  {
+public class ScorePK implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "movie_id")
