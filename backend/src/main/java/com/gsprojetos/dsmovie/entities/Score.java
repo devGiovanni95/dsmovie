@@ -1,9 +1,17 @@
 package com.gsprojetos.dsmovie.entities;
 
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_score")
 public class Score {
 
 //    private Movie movie;
 //    private User user;
+
+    @EmbeddedId//id de chave coposta
     private ScorePK id = new ScorePK();
 
     private Double value;

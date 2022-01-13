@@ -1,8 +1,21 @@
 package com.gsprojetos.dsmovie.entities;
-//CLASSE AUXILIAR PARA FAZER O RELACIONAMENTO DE CHAVE PRIMARIA POIS A RELACAO E MUITO PARA MUITOS
-public class ScorePK {
 
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import java.io.Serializable;
+
+//CLASSE AUXILIAR PARA FAZER O RELACIONAMENTO DE CHAVE PRIMARIA POIS A RELACAO E MUITO PARA MUITOS
+@Embeddable
+public class ScorePK  {
+
+    @ManyToOne
+    @JoinColumn(name = "movie_id")
     private Movie movie;
+
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     public ScorePK(){
