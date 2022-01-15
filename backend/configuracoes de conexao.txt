@@ -1,0 +1,11 @@
+					postgres://
+
+username				ripodeqooytjoq
+	:
+password				521ad13c68abdb915937e1b351a4cd66ca403fcd18f7214ed99893e66deea32f
+	@
+host name/adrress			ec2-18-234-17-166.compute-1.amazonaws.com
+	:
+Port					5432
+	/	
+Maintenance-db restricao		df3j3v2vp53kli
