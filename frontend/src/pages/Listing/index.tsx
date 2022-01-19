@@ -32,10 +32,14 @@ function Listing() {
             });
     }, [pageNumber]);//o then depende do pageNumbner quando ele mudar atualiza a pagina
 
+    //funcao lambda que muda de pagina
+    const handlePageChange = (newPageNumber : number) => {
+        setPageNumber(newPageNumber);
+    }
 
     return (
         <>
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange} />
 
             <div className="container">
                 <div className="row">
